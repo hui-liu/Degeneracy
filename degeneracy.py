@@ -230,9 +230,9 @@ for chr in chroms:
     for item in ids_dict[chr]:
         id, strand = item
         if id not in cds_info_dict: continue
-        full_cds = cds_info_dict[id] #[['Chr15', 130096, 130344, '+'], ['Chr15', 131129, 131242, '+']]
+        full_cds = cds_info_dict[id]
         length = CDSsum(full_cds)
-        mod = length % 3 # uncompleted cds
+        mod = length % 3
         # extract the whole CDS region
         cds_seq = getCDS(full_cds, ref_seq)
         n = 0
