@@ -260,9 +260,11 @@ for chr in chroms:
                     four_fold[r] = [chr, str(pos-1), str(pos), id]
 
 for i in zero_fold:
+    if i in four_fold: continue
     zero_fold_out.write("\t".join(zero_fold[i]) + "\n")
 zero_fold_out.close()
 
 for i in four_fold:
+    if i in zero_fold: continue
     four_fold_out.write("\t".join(four_fold[i]) + "\n")
 four_fold_out.close()
