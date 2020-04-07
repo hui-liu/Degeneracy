@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #Author: liuhui
-#EMail: liuhui@bjfu.edu.cn / hui.liu@umu.se
+#EMail: liuhui@bjfu.edu.cn / hui.liu@umu.se; zhao.wei@umu.se
 #Description: generate 0 and 4fold sites
 
 import sys
