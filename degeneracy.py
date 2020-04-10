@@ -11,7 +11,8 @@ from collections import OrderedDict
 USAGE = "\nusage: python %s <gff3> <fasta> <0-fold output> <4-fold output>\n" % sys.argv[0]
 
 if len(sys.argv) != 5:
-    print USAGE
+    #print USAGE
+    print(USAGE)
     sys.exit()
 
 
